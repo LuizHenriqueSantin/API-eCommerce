@@ -106,7 +106,7 @@ createPedido = async (req, res) => {
         const produtos = stringProdutos.split(",");
         const quantidade = stringQuantidade.split(",");
         const dia = new Date();
-        let vensdaId; // Definindo a variável vensdaId fora do escopo do bloco
+        let vensdaId;
 
         for (let index = 0; index < produtos.length; index++) {
             const produtoId = Number(produtos[index]);
@@ -137,7 +137,7 @@ createPedido = async (req, res) => {
                     if (error) {
                         reject(error);
                     } else {
-                        vensdaId = results.insertId; // Definindo vensdaId aqui para acessá-lo posteriormente
+                        vensdaId = results.insertId;
                         resolve();
                     }
                 }
