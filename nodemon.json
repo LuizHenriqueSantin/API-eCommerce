@@ -1,0 +1,9 @@
+{
+    "env": {
+        "USER": "luiz",
+        "PASSWORD": "lhrs2000",
+        "DATABASE": "desafio6",
+        "HOST": "localhost",
+        "PORT": 3306
+    }
+}
